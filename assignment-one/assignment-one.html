@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	<button class="btn_slide_rt">Slide Right</button>
+	<button class="btn_slide_dn">Slide Down</button>
+	<button class="btn_show_animate">Show (No Animation)</button>
+
+
+	<nav class="nav_hide">
+		<a href="javascript:void(0)" class="close">&times;</a>
+		<div class="menu_nav">
+			<ul>
+				<li><a href="javascript:void(0)">About</a></li>
+				<li><a href="javascript:void(0)">Services</a></li>
+				<li><a href="javascript:void(0)">Clients</a></li>
+				<li><a href="javascript:void(0)">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<script src="js/jquery-1.12.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("nav").hide();
+			// $(".btn_slide_rt").click(function(){
+			// 	$("nav").toggleClass('active');
+			// });
+			$(".btn_show_animate").click(function(){
+				$("nav").show();
+			});
+			$(".close").click(function(){
+				$("nav").hide();
+			});
+		});
+	</script>
+</body>
+</html>
